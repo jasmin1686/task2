@@ -58,7 +58,7 @@
 
                     num.Add(Addtonumber);
 
-                    Console.WriteLine($"{Addtonumber} added");
+                    Console.WriteLine( Addtonumber +  " the number added");
                 }
 
                 else if (choose == "m")
