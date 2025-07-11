@@ -7,9 +7,10 @@
 
             List<int> num = new List<int>();
             string choose;
-
             do
+            
             {
+                
                 Console.WriteLine("Menu:");
 
                 Console.WriteLine("P - Print numbers");
@@ -32,21 +33,26 @@
                 Console.Write("Enter your choice: ");
 
                 choose = Console.ReadLine().ToLower();
-
                 if (choose == "p")
                 {
                     if (num.Count == 0)
                     {
+                        
+                    
                         Console.WriteLine("The list is empty");
                     }
+                    
                     else
+                        
                     {
                         Console.Write("( ");
                         for (int i = 0; i < num.Count; i++)
+                            
                         {
                             Console.Write(num[i] + " ");
 
                         }
+                        
                         Console.WriteLine(")");
                     }
                 }
@@ -64,10 +70,13 @@
                 else if (choose == "m")
                 {
                     if (num.Count == 0)
+                        
                     {
                         Console.WriteLine("Unable to calculate the mean - no data");
                     }
+                    
                     else
+                        
                     {
                         int sum = 0;
 
@@ -82,6 +91,7 @@
                         Console.WriteLine($"The mean is {mean}");
                     }
                 }
+                
                 else if (choose == "s")
                 {
                     if (num.Count == 0)
@@ -173,16 +183,22 @@
 
 
                 else if (choose == "q")
+                    
                 {
 
                     Console.WriteLine("Goodbye");
                 }
+                
                 else
+                    
                 {
+                  
                     Console.WriteLine("Unknown selection, please try again");
                 }
+                
 
-            } while (choose != "q");
+            }
+            while (choose != "q");
 
         }
 
